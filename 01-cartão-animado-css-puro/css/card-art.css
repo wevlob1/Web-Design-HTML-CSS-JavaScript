@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Raleway:wght@300&display=swap');
+
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Raleway', sans-serif; */
+
+.background-theme {
+    position: relative;
+    height: 50rem;
+    min-width: 32rem;
+    background-image: radial-gradient(rgb(255, 241, 241), rgba(0, 241, 241, 0.911));
+}
+
+.frame {
+    display: flex;
+    position: absolute;
+    top: 10rem;
+    width: 50rem;
+    height: 30rem;
+    left: 50%;
+    translate: -50%;
+    background-image: radial-gradient(rgb(0, 151, 151), rgba(0, 217, 255, 0.76));
+    border-radius: 2.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    /* 6.7px */
+    border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+.frame:hover{
+    animation: shake 2s infinite alternate ease-in-out;
+}
+
+
+.img-card {
+    position: absolute;
+    height: 20rem;
+}
+
+#img1 {
+    position: absolute;
+    left: -32%;
+    animation: moviment-tree-2 3s infinite alternate ease-in-out;
+}
+
+#img2 {
+    /* ilha da direita */
+    position: absolute;
+    right: -20%;
+    animation: moviment-tree-1 5s infinite alternate ease-in-out;
+}
+
+#img3 {
+    /* ilha arvore amarela */
+    position: absolute;
+    height: 35rem;
+    right: 50%;
+    animation: moviment-tree-1 7s infinite alternate ease-in-out;
+}
+
+@keyframes moviment-tree-1 {
+    0% {
+        top: -50px;
+    }
+
+    100% {
+        top: -150px;
+    }
+}
+
+@keyframes moviment-tree-2 {
+    0% {
+        top: 100px;
+    }
+
+    100% {
+        top: -20px;
+    }
+}
+
+@keyframes shake {
+    to {
+        transform: perspective(90rem) rotateY(10deg);
+        transition: 0.5s;
+    }
+    from{
+        transform: perspective(90rem) rotateY(-10deg);
+        transition: 0.5s;
+    }
+}
+
+/* configuraçoes do card */
+.info,
+.info2 {
+    height: 100%;
+    width: 50%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(40, 205, 255, 0.137), rgba(240, 253, 255, 0.774));
+    border-radius: 2.5rem;
+}
+
+.perfil {
+    width: 11.2rem;
+    border-radius: 10px;
+}
+
+/*config dados */
+
+.name,
+.name-title,
+.ling,
+.contato {
+    margin-left: 5%;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    align-self: center;
+}
+
+.name {
+    margin-top: 15%;
+    font-size: 3.2rem;
+}
+
+.name-title {
+    font-size: 1.6rem;
+}
+
+.ling {
+    list-style: none;
+    text-align: center;
+}
+
+.ling li {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.4rem;
+    margin: 1px;
+}
+
+.contato {
+    font-size: 3.2rem;
+    margin-top: 10px;
+}
+
+.btn {
+    background-image: linear-gradient(rgb(0, 248, 248), rgba(235, 255, 251, 0.932));
+    width: 32rem;
+    height: 6.4rem;
+    position: absolute;
+    bottom: -3.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2.4rem;
+    border: none;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 3.2rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}

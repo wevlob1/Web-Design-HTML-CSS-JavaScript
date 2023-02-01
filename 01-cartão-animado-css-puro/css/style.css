@@ -1,0 +1,44 @@
+/* responsividade */
+
+/* css units 
+
+unidades de medida do css 
+
+layout fixo
+px 
+
+layout Fluido
+% 
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem equivale a 10px */
+}
+h1,
+h2,
+p {
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    font-size: 3rem;
+}
+
+.content p {
+    text-align: center;
+    padding-bottom: 35px;
+
+/* aqui vai os medias queries */
+
+
